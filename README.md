@@ -110,3 +110,10 @@ MANGOHUD_CONFIG=fps,fps_limit=30 mangohud --dlsym glxgears
 ```
 
 ![Glxgears](images/glxgears.png)
+
+We may also use it on steam. For this, just put the configuration on steam game launcher
+```
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud --dlsym %command%
+```
+
+* **Conclusion** - I'm a long Linux/Unix system user, and always tryed to found a configurarion to optimize the system for a confortable use similar what we have in windows. Documentation for power usage and proprietary devices are hard to find. The last piece for me was to find mangohud. With all this configurarions we can have the very near or almost the same experience as we can in Ms Windows systems. 
