@@ -1,4 +1,4 @@
-# Linux power optimization tutorial for Nvidia and Ubuntu based distribuitions
+# Linux power optimization tutorial for Nvidia, Intel and Ubuntu based distributions
 
 Optimizing power consumption for Linux/Unix system is not an easy tasks. We had very few contents about this theme, and few people available to discuss that. This tutorial is intended for users of nvidia/ubuntu based laptops.
 
@@ -91,7 +91,7 @@ Psensors is a tool that works using sensors. Its a gui with charts:
 
 ![Nvidia](images/nvidia_profile.png)
 
-* **Nvidia Rule Configuration for 60ps** - Not Xorg, but all opengl/vulkan applications can run at 60fps using this rules
+* **Nvidia Rule Configuration for 60fps** - Not Xorg, but all opengl/vulkan applications can run at 60fps using this rules
 
 ![Nvidia](images/nvidia_rules.png)
 
