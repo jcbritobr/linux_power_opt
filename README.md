@@ -41,9 +41,13 @@ Some devices like usb controllers for mouses don't need to be put in save power 
 We can enable all suggested tunings running the command line:
 ```
 sudo powertop --auto-tune
-``` 
+```
 
-2. **Overheating, CPU/GPU monitoring, Fine Tuning** - Biggest vilains of pc overheating are cpus and gpus. If they are working in maximum performance every time, they will get at the threshold temperature soon, and the performance issues will begin happen. Overheating also leads to hardware damage, and its very important that our devices are operating in proper temperature.
+2. **Controlling CPU Frequency** - High cpu frequency means high power consumption. It maybe using less cpu power will be desireable to maintain a good cpu temperature and a silent machine. The application **cpupower-gui** can allow changes in cpu's frequency limits. Usage is very intuitive, and the application can be installed from github repository [here](https://github.com/vagnum08/cpupower-gui).
+
+![CpuPowerGui](images/cpupower.png)
+
+3. **Overheating, CPU/GPU monitoring, Fine Tuning** - Biggest vilains of pc overheating are cpus and gpus. If they are working in maximum performance every time, they will get at the threshold temperature soon, and the performance issues will begin happen. Overheating also leads to hardware damage, and its very important that our devices are operating in proper temperature.
 
 * **Sensors tool** - We can use sensors tool to monitore our cpus temperature.
 To install sensors:
