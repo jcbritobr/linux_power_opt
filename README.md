@@ -52,7 +52,7 @@ sudo powertop --auto-tune
 
 ![CpuPowerGui](images/cpupower.png)
 
-3. Changing CPU frequency using the command line interface - Its also possible do what cpupower-gui do with the command line interface.
+3. **Changing CPU frequency using the command line interface** - Its also possible do what cpupower-gui do with the command line interface.
 * **We can query the cpu frequency attributes of a core**:
 
 ```
