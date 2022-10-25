@@ -52,9 +52,8 @@ sudo powertop --auto-tune
 
 ![CpuPowerGui](images/cpupower.png)
 
-* **Changing CPU frequency using the command line interface - Its also possible do what cpupower-gui do with the command line interface**.
-
-a. **We can query the cpu frequency attributes of a core**:
+3. **Changing CPU frequency using the command line interface - Its also possible do what cpupower-gui do with the command line interface**.
+* **We can query the cpu frequency attributes of a core**:
 
 ```
 $ grep . /sys/devices/system/cpu/cpu0/cpufreq/*
@@ -75,7 +74,7 @@ $ grep . /sys/devices/system/cpu/cpu0/cpufreq/*
 /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed:<unsupported>
 ```
 
-b. **Changing the cpu frequency scaling governor and checking it:**
+* **Changing the cpu frequency scaling governor and checking it:**
 
 ```
 echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
@@ -93,10 +92,9 @@ grep . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor:powersave
 /sys/devices/system/cpu/cpu8/cpufreq/scaling_governor:powersave
 /sys/devices/system/cpu/cpu9/cpufreq/scaling_governor:powersave
-
 ```
 
-c. **Setting mac CPU frequency to a value and check it:**
+* **Setting mac CPU frequency to a value and check it:**
 
 ```
 echo 800000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
@@ -114,10 +112,9 @@ echo 800000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
 /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq:800000
 /sys/devices/system/cpu/cpu8/cpufreq/scaling_max_freq:800000
 /sys/devices/system/cpu/cpu9/cpufreq/scaling_max_freq:800000
-
 ```
 
-d. **Query if the frequency is limiting:**
+* **Query if the frequency is limiting:**
 
 ```
 grep . /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq
@@ -136,7 +133,7 @@ grep . /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq
 /sys/devices/system/cpu/cpu9/cpufreq/scaling_cur_freq:800004
 ```
 
-3. **Overheating, CPU/GPU monitoring, Fine Tuning** - Biggest vilains of pc overheating are cpus and gpus. If they are working in maximum performance every time, they will get at the threshold temperature soon, and the performance issues will begin happen. Overheating also leads to hardware damage, and its very important that our devices are operating in proper temperature.
+4. **Overheating, CPU/GPU monitoring, Fine Tuning** - Biggest vilains of pc overheating are cpus and gpus. If they are working in maximum performance every time, they will get at the threshold temperature soon, and the performance issues will begin happen. Overheating also leads to hardware damage, and its very important that our devices are operating in proper temperature.
 * **Sensors tool** - We can use sensors tool to monitore our cpus temperature.
   To install sensors:
 
